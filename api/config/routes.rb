@@ -52,7 +52,13 @@ Spree::Core::Engine.routes.prepend do
       end
 
       resources :countries, :only => [:index, :show]
+      resources :zones do
+        member do
+          post :add_country
+        end
+      end
       resources :addresses, :only => [:show, :update]
+
       resources :taxonomies do
         resources :taxons
       end

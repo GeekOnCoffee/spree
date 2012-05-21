@@ -59,6 +59,10 @@ module Spree
       def taxon_attributes
         [:id, :name, :permalink, :position, :parent_id, :taxonomy_id]
       end
+      
+      def zone_attributes
+        [:id, :name, :description, :default_tax]
+      end
     end
   end
 end
