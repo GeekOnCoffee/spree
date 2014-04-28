@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'select2-rails', '~> 3.4.7'
   s.add_dependency 'momentjs-rails', '2.5.1'
   s.add_dependency 'i18n-js', '2.1.2'
+  s.add_dependency 'ember-rails', '~> 0.14.1'
 
   s.add_development_dependency 'email_spec', '~> 1.2.1'
   s.add_development_dependency 'teaspoon'
