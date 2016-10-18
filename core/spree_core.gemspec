@@ -23,13 +23,13 @@ Gem::Specification.new do |s|
   s.add_dependency 'aws-sdk', '1.31.3'
   s.add_dependency 'cancan', '~> 1.6.10'
   s.add_dependency 'deface', '= 1.0.0'
-  s.add_dependency 'ffaker', '~> 1.22.0'
+  s.add_dependency 'ffaker'
   s.add_dependency 'highline', '~> 1.6.18' # Necessary for the install generator
   s.add_dependency 'httparty', '~> 0.11' # For checking alerts.
   s.add_dependency 'json', '~> 1.7'
   s.add_dependency 'kaminari', '~> 0.15.0'
   s.add_dependency 'monetize'
-  s.add_dependency 'paperclip', '~> 3.4.1'
+  s.add_dependency 'paperclip', '~> 4.3.1'
   s.add_dependency 'paranoia', '~> 1.3'
   s.add_dependency 'rails', '~> 3.2.21'
   s.add_dependency 'ransack', '~> 1.1.0'
