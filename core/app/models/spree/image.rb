@@ -1,6 +1,5 @@
 module Spree
   class Image < Spree::Asset
-    #validates_attachment_presence :attachment
     validate :no_attachment_errors
 
     attr_accessible :alt, :attachment, :position, :viewable_type, :viewable_id
@@ -11,6 +10,9 @@ module Spree
                       url: '/spree/products/:id/:style/:basename.:extension',
                       path: ':rails_root/public/spree/products/:id/:style/:basename.:extension',
                       convert_options: { all: '-strip -auto-orient -colorspace sRGB' }
+
+    validates :attachment, :attachment_presence => true
+    do_not_validate_attachment_file_type :attachment
 
     # save the w,h of the original image (from which others can be calculated)
     # we need to look at the write-queue for images which have not been saved yet

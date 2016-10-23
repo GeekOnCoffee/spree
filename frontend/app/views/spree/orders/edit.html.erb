@@ -22,11 +22,7 @@
           <h5><%= Spree.t(:subtotal) %>: <span class="order-total"><%= @order.display_total.to_html %></span></h5>
         </div>
 
-        <div class="links columns sixteen alpha omega" data-hook="cart_buttons">
-          <%= order_form.text_field :coupon_code, :size => 10, :placeholder => Spree.t(:coupon_code) %>
-          <%= button_tag :class => 'primary', :id => 'update-button' do %>
-            <%= Spree.t(:update) %>
-          <% end %>
+        <div class="links columns alpha omega" data-hook="cart_buttons">
           <%= button_tag :class => 'button checkout primary', :id => 'checkout-link', :name => 'checkout' do %>
             <%= Spree.t(:checkout) %>
           <% end %>
