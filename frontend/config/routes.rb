@@ -16,7 +16,7 @@ Spree::Core::Engine.routes.draw do
 
   populate_redirect = redirect do |params, request|
     request.flash[:error] = Spree.t(:populate_get_error)
-    request.referer || '/cart'
+    request.referer || '/store/cart'
   end
 
   get '/orders/populate', :via => :get, :to => populate_redirect
